@@ -69,6 +69,10 @@
   );
   height: 650px;
 
+  @media only screen and (max-width: 991px) {
+    height: 1000px;
+  }
+
   @media only screen and (max-width: 767px) {
     height: auto;
     padding-top: 40px;

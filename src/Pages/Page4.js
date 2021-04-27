@@ -92,7 +92,7 @@ const Page4 = () => {
                 </Col>
               </Row>
               <Row>
-                <Col md={6} xs={12} className="mx-auto containerForm">
+                <Col md={12} xs={12} className="mx-auto containerForm">
                   <div className="footer__subscription--input text-center">
                     <input type="text" placeholder="Your work email address" />
                     <button>Join the whitelist</button>

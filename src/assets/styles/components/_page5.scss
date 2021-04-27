@@ -1,6 +1,10 @@
 .canDoWithFittly {
   padding-bottom: 80px;
-  background: url("../../img/bg_can_do.svg") 73% top no-repeat;
+  background: url("../../img/bg_can_do.svg") right top no-repeat;
+
+  @media only screen and (max-width: 1980px) {
+    background: url("../../img/bg_can_do.svg") 70% top no-repeat;
+  }
 
   @media only screen and (max-width: 767px) {
     background: transparent;
@@ -54,8 +58,7 @@
     }
 
     .collapse.show .card-body {
-      background-color: $fittly-orange;
-      color: white;
+      background-color: $fittly-beige;
     }
   }
 }

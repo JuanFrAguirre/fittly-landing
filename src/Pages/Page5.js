@@ -88,7 +88,7 @@ const Page5 = () => {
             </Row>
           </Col>
 
-          <Col md={6} xs={12} className="d-flex justify-content-center">
+          <Col md={6} xs={12} className="d-block text-center">
             <img src={demo} alt="Fittly" className="demo" />
           </Col>
         </Row>
