@@ -30,15 +30,16 @@
 
   .subtitle {
     font-family: "Manrope", sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 32px;
+    font-weight: 400;
+    font-size: $fs18;
+    line-height: $fs32;
     color: $fittly-neutral-black;
     margin-bottom: 30px;
   }
 
   .btnOrange {
     font-family: "Manrope", sans-serif;
+    font-weight: 700;
     color: #ffffff;
     background-color: $fittly-orange;
     border: 0;
@@ -46,8 +47,9 @@
     font-weight: 700;
     border-radius: 8px;
     padding: 16px 32px;
-    max-width: 214px;
+    max-width: 220px;
     box-shadow: 10px 10px 35px rgba(19, 29, 29, 0.1);
+    letter-spacing: 0.1px;
 
     &.little {
       font-size: 14px;
