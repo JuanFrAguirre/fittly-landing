@@ -1,0 +1,71 @@
+$imgFactorX: 400px;
+$imgFactorY: 553px;
+
+.step3 {
+	&__img {
+		margin-bottom: 62px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&--img {
+			background: url('../../img/girl-jumping.png');
+			width: $imgFactorX * 1.2;
+			height: $imgFactorY * 1.2;
+			background-size: cover;
+
+			@media (min-width: 768px) {
+				width: $imgFactorX * 0.6;
+				height: $imgFactorY * 0.6;
+			}
+
+			@media (min-width: 1024px) {
+				width: $imgFactorX * 0.8;
+				height: $imgFactorY * 0.8;
+			}
+
+			@media (min-width: 1200px) {
+				width: $imgFactorX * 1;
+				height: $imgFactorY * 1;
+			}
+		}
+		@media (min-width: 768px) {
+			justify-content: start;
+		}
+	}
+
+	@media (min-width: 768px) {
+		margin-bottom: 135px;
+	}
+
+	&__text {
+		&--container {
+			h2 {
+				font-family: 'BrandonTextBold';
+				font-size: $fs44;
+				line-height: 60px;
+			}
+		}
+
+		& {
+			display: flex;
+		}
+
+		&--item {
+			width: 100%;
+			border-left: 1px solid $fittly-orange;
+			display: flex;
+			align-items: space-between;
+			min-height: 56px;
+			margin-top: 62px;
+
+			p {
+				color: $fittly-dark-teal;
+				font-size: $fs18;
+				font-family: 'BrandonTextBold';
+				padding-left: 34px;
+				padding-right: 34px;
+			}
+		}
+	}
+}

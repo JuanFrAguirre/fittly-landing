@@ -1,0 +1,40 @@
+.step4 {
+	margin-top: 135px;
+	margin-bottom: 135px;
+
+	h2 {
+		font-family: 'BrandonTextBold';
+		font-size: $fs48;
+		line-height: 64px;
+		text-align: center;
+	}
+
+	&__item {
+		&--wrapper {
+			display: flex;
+			justify-content: center;
+			margin: 32px 0;
+			height: 200px;
+		}
+
+		& {
+			height: 100%;
+			width: 100%;
+			padding: 24px 31px;
+			border: none;
+			max-width: 330px;
+			max-height: 200px;
+			box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+			border-radius: 8px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		&--title {
+			font-family: 'BrandonTextRegular';
+			font-size: $fs24;
+			line-height: 32px;
+		}
+	}
+}
