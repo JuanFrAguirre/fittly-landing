@@ -22,9 +22,11 @@
 			text-align: center;
 			letter-spacing: 0.02em;
 			text-transform: uppercase;
+
 			&.pro {
 				color: $fittly-orange;
 			}
+
 			&.employee {
 				color: $fittly-blue;
 			}

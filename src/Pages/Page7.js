@@ -6,20 +6,20 @@ const Page7 = () => {
 			<Container fluid className='footer--container'>
 				<Container className='footer'>
 					<Row className='footer__subscription'>
-						<Col className='footer__subscription--text' md={6} lg={8}>
+						<Col className='footer__subscription--text' md={12} lg={8}>
 							<h4>
 								Sign up today for exclusive access to our premium subscription for your <span>first 3 months</span>
 							</h4>
-							<div className='footer__input' placeholder='Your work email address'>
-								<input type='text' />
+							<div className='footer__subscription--input'>
+								<input type='text' placeholder='Your work email address' />
 								<button>Join the whitelist</button>
 							</div>
 						</Col>
-						<Col className='footer__subscription--img' md={6} lg={4}></Col>
+						<Col className='footer__subscription--img' md={0} lg={4}></Col>
 					</Row>
 					<Row className='footer__info'>
 						<Col className='footer__info--section'>
-							<img src='../assets/img/logo.svg' alt='fittly logo' />
+							<div className='' />
 						</Col>
 						<Col className='footer__info--section'>
 							<p>C 2021 Fittly</p>

@@ -1,5 +1,6 @@
 .footer {
-	p {
+	p,
+	h4 {
 		margin: 0;
 	}
 
@@ -23,6 +24,51 @@
 		top: 64px;
 		border-radius: 15px;
 		padding: 48px;
+
+		&--text {
+			h4 {
+				margin-bottom: 32px;
+				font-size: $fs32;
+				line-height: 45px;
+				font-family: 'BrandonTextRegular';
+
+				span {
+					font-family: 'BrandonTextBold';
+				}
+			}
+		}
+
+		&--input {
+			height: 52px;
+			overflow: hidden;
+
+			input {
+				font-family: 'BrandonTextRegular';
+				height: 100%;
+				width: 248px;
+				padding: 14px 16px;
+				font-size: $fs14;
+				line-height: 24px;
+				border: none;
+				border-radius: 5px 0 0 5px;
+			}
+
+			button {
+				background-color: $fittly-text-gray;
+				border: none;
+				height: 48px;
+				width: 156px;
+				border-radius: 0 5px 5px 0;
+				color: #fff;
+				font-family: 'BrandonTextBold';
+				font-size: $fs14;
+				line-height: 20px;
+			}
+		}
+		&--img {
+			width: 100%;
+			height: 100%;
+		}
 	}
 
 	&__info {
