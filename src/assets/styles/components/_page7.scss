@@ -1,83 +1,134 @@
 .footer {
-	p,
-	h4 {
-		margin: 0;
-	}
+  p,
+  h4 {
+    margin: 0;
+  }
 
-	&--container {
-		background: url('../../img/footer_bg.png');
-		background-size: cover;
-		background-position-x: 50%;
-		background-position-y: 302px;
-		background-repeat: no-repeat;
-		height: 665px;
-		position: relative;
-	}
+  &--container {
+    background: $fittly-neutral-black
+      url("../../img/footer_big_transparent.svg") left -300px no-repeat;
+    height: 365px;
+    margin-top: 200px;
 
-	& {
-	}
+    @media only screen and (max-width: 767px) {
+      background: $fittly-neutral-black
+        url("../../img/footer_big_transparent.svg") bottom left no-repeat;
+      height: auto;
+      margin-top: 0px;
+      padding-top: 20px;
+    }
+  }
 
-	&__subscription {
-		background-color: $fittly-orange;
-		min-height: 302px;
-		position: relative;
-		top: 64px;
-		border-radius: 15px;
-		padding: 48px;
+  &__subscription {
+    background: $fittly-orange url("../../img/photo_footer.png") top right
+      no-repeat;
+    min-height: 302px;
+    position: relative;
+    top: -200px;
+    border-radius: 15px;
+    padding: 48px;
 
-		&--text {
-			h4 {
-				margin-bottom: 32px;
-				font-size: $fs32;
-				line-height: 45px;
-				font-family: 'BrandonTextRegular';
+    @media only screen and (max-width: 767px) {
+      background: $fittly-orange;
+      position: inherit;
+      top: 0px;
+      min-height: inherit;
+    }
 
-				span {
-					font-family: 'BrandonTextBold';
-				}
-			}
-		}
+    &--text {
+      h4 {
+        margin-bottom: 32px;
+        font-size: $fs32;
+        line-height: 45px;
+        font-family: "BrandonTextRegular";
 
-		&--input {
-			height: 52px;
-			overflow: hidden;
+        @media only screen and (max-width: 767px) {
+          text-align: center;
+        }
 
-			input {
-				font-family: 'BrandonTextRegular';
-				height: 100%;
-				width: 248px;
-				padding: 14px 16px;
-				font-size: $fs14;
-				line-height: 24px;
-				border: none;
-				border-radius: 5px 0 0 5px;
-			}
+        span {
+          font-family: "BrandonTextBold";
+        }
+      }
+    }
 
-			button {
-				background-color: $fittly-text-gray;
-				border: none;
-				height: 48px;
-				width: 156px;
-				border-radius: 0 5px 5px 0;
-				color: #fff;
-				font-family: 'BrandonTextBold';
-				font-size: $fs14;
-				line-height: 20px;
-			}
-		}
-		&--img {
-			width: 100%;
-			height: 100%;
-		}
-	}
+    &--input {
+      height: 52px;
 
-	&__info {
-		position: absolute;
-		width: 100%;
-		bottom: 38px;
-		color: #fff;
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-end;
-	}
+      @media only screen and (max-width: 767px) {
+        height: auto;
+      }
+
+      input {
+        font-family: "BrandonTextRegular";
+        height: 100%;
+        width: 248px;
+        padding: 14px 16px;
+        font-size: $fs14;
+        line-height: 24px;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        @media only screen and (max-width: 767px) {
+          width: 100%;
+          border-radius: 5px;
+          margin-bottom: 10px;
+        }
+      }
+
+      button {
+        background-color: $fittly-text-gray;
+        border: none;
+        height: 48px;
+        width: 156px;
+        border-radius: 0 5px 5px 0;
+        color: #fff;
+        font-family: "BrandonTextBold";
+        font-size: $fs14;
+        line-height: 20px;
+
+        @media only screen and (max-width: 767px) {
+          width: 100%;
+          border-radius: 5px;
+        }
+      }
+    }
+    &--img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .copyright {
+    font-family: "Manrope", sans-serif;
+    font-weight: 300;
+    font-size: $fs14;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+  }
+
+  .social_media_link {
+    width: 24px;
+    height: 24px;
+    border-radius: 25px;
+    background-color: #2a3333;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social_media_link:hover {
+    background-color: $fittly-orange;
+  }
+
+  .footer_bar {
+    @media only screen and (max-width: 767px) {
+      padding: 40px 0 40px 0;
+
+      .logo {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }

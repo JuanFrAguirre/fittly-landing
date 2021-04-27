@@ -101,28 +101,31 @@
       padding-bottom: 40px;
     }
 
-    .optionsCheck p {
-      color: #fff;
-      font-size: $fs14;
-      font-family: "Manrope", sans-serif;
-      font-weight: 400;
+    .optionsCheck {
+      padding-top: 50px;
 
-      @media only screen and (max-width: 767px) {
-        padding-bottom: 20px;
-        font-size: $fs18;
-        text-align: center;
+      p {
+        color: #fff;
+        font-size: $fs14;
+        font-family: "Manrope", sans-serif;
+        font-weight: 400;
 
-        img {
-          margin-bottom: 10px;
+        @media only screen and (max-width: 767px) {
+          padding-bottom: 20px;
+          font-size: $fs18;
+          text-align: center;
+          img {
+            margin-bottom: 10px;
+          }
         }
       }
-    }
 
-    .optionsCheck p img {
-      margin-right: 10px;
-    }
-    .containerForm {
-      padding-bottom: 60px;
+      .optionsCheck p img {
+        margin-right: 10px;
+      }
+      .containerForm {
+        padding-bottom: 60px;
+      }
     }
   }
 }
