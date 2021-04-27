@@ -1,0 +1,50 @@
+.canDoWithFittly {
+  padding-bottom: 80px;
+  background: url("../../img/bg_can_do.svg") top right no-repeat;
+
+  @media only screen and (max-width: 767px) {
+    background: transparent;
+  }
+
+  .title {
+    font-family: "BrandonTextBold";
+    font-weight: bold;
+    font-size: $fs48;
+    line-height: $fs64;
+    color: $fittly-neutral-black;
+    margin-bottom: 60px;
+
+    @media only screen and (max-width: 767px) {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      font-size: $fs32;
+      line-height: inherit;
+    }
+  }
+
+  .cardOptions {
+    background-color: $fittly-beige;
+    border: 0;
+
+    .card-header {
+      font-family: "BrandonTextBold";
+      border: 0;
+      font-size: $fs14;
+      letter-spacing: 2px;
+      padding: 30px 30px 10px 30px;
+      background-color: $fittly-beige;
+    }
+    .card-body {
+      font-family: "BrandonTextRegular";
+      border: 0;
+      font-size: $fs12;
+      letter-spacing: 2px;
+      padding: 10px 30px 20px 30px;
+    }
+
+    .collapse.show .card-body {
+      background-color: $fittly-orange;
+      color: white;
+    }
+  }
+}
