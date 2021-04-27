@@ -1,0 +1,45 @@
+.advantages {
+  padding-bottom: 100px;
+
+  @media only screen and (max-width: 767px) {
+    padding-bottom: 50px;
+  }
+
+  .title {
+    font-family: "BrandonTextBold";
+    font-weight: bold;
+    font-size: $fs48;
+    line-height: $fs64;
+    color: $fittly-neutral-black;
+    margin-bottom: 60px;
+
+    @media only screen and (max-width: 767px) {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      font-size: $fs32;
+      line-height: inherit;
+    }
+  }
+
+  .iconAdvantage {
+    width: 72px;
+    height: 72px;
+    border-radius: 100px;
+    background-color: #f4f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titleOption {
+    font-size: $fs24;
+    color: $fittly-neutral-black;
+    font-family: "BrandonTextBold";
+  }
+
+  .subTitleOption {
+    font-size: $fs16;
+    color: $fittly-neutral-black;
+    font-family: "BrandonTextRegular";
+  }
+}

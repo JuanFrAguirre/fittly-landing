@@ -1,0 +1,70 @@
+.header {
+  background: #fff url("../../img/header_desktop.png") top right no-repeat;
+  min-height: 800px;
+
+  @media only screen and (max-width: 767px) {
+    background: #fff url("../../img/header_desktop_mobile.png") bottom center
+      no-repeat;
+    min-height: 850px;
+  }
+
+  .logo {
+    width: 76px;
+  }
+
+  .title {
+    font-family: "BrandonTextBold";
+    font-weight: bold;
+    font-size: $fs64;
+    line-height: 72px;
+    color: $fittly-neutral-black;
+    margin-bottom: 40px;
+
+    @media only screen and (max-width: 767px) {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: $fs32;
+      line-height: inherit;
+    }
+  }
+
+  .subtitle {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: $fs18;
+    line-height: $fs32;
+    color: $fittly-neutral-black;
+    margin-bottom: 30px;
+  }
+
+  .btnOrange {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: $fittly-orange;
+    border: 0;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 16px 32px;
+    max-width: 220px;
+    box-shadow: 10px 10px 35px rgba(19, 29, 29, 0.1);
+    letter-spacing: 0.1px;
+
+    &.little {
+      font-size: 14px;
+      line-height: 14px;
+      padding: 4px 20px;
+      min-height: 42px;
+    }
+  }
+
+  .btnOrange:hover,
+  .btnOrange:focus,
+  .btnOrange:active,
+  .btnOrange.active {
+    color: #ffffff;
+    background-color: $fittly-red;
+    border: 0;
+  }
+}
